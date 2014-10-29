@@ -3,14 +3,30 @@ using System.Collections;
 
 public class TheSunController : MonoBehaviour
 {
-	// Use this for initialization
+	private int angryLevel = 0;
+	private int baseForceValue = 300;
 	void Start () 
 	{
-		this.rigidbody2D.AddForce(new Vector2(100.0f,300.0f));
+		ForceTheSun();
 	}
 	
-	// Update is called once per frame
 	void Update () 
 	{
+		if(Input.GetKeyUp(KeyCode.Alpha1))
+		{
+			angryLevel++;
+			ForceTheSun();
+		}
+	}
+
+	private Vector2 GetForceVector()
+	{
+		int forceX = Random.RandomRange(- (baseForceValue +angryLevel * 100) , baseForceValue +angryLevel * 100);
+		int forceY = Random.RandomRange(- (baseForceValue +angryLevel * 100) , baseForceValue +angryLevel * 100);
+		return new Vector2(forceX,forceY);
+	}
+	private void ForceTheSun()
+	{
+		this.rigidbody2D.AddForce(GetForceVector());
 	}
 }
