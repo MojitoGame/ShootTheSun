@@ -18,15 +18,15 @@ public class TheSunController : MonoBehaviour
 			ForceTheSun();
 		}
 	}
+	private void ForceTheSun()
+	{
+		this.rigidbody2D.AddForce(GetForceVector());
+	}
 
 	private Vector2 GetForceVector()
 	{
 		int forceX = Random.RandomRange(- (baseForceValue +angryLevel * 100) , baseForceValue +angryLevel * 100);
 		int forceY = Random.RandomRange(- (baseForceValue +angryLevel * 100) , baseForceValue +angryLevel * 100);
 		return new Vector2(forceX,forceY);
-	}
-	private void ForceTheSun()
-	{
-		this.rigidbody2D.AddForce(GetForceVector());
 	}
 }
