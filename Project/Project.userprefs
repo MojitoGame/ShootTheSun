@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ArrowController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\ArrowGenerater.cs">
     <Files>
-      <File FileName="Assets\Script\ArrowController.cs" Line="6" Column="1" />
-      <File FileName="Assets\Script\ShootTheSunCore.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\ArrowController.cs" Line="8" Column="5" />
+      <File FileName="Assets\Script\ShootTheSunCore.cs" Line="6" Column="1" />
       <File FileName="Assets\Script\Border.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\TheSunController.cs" Line="18" Column="18" />
+      <File FileName="Assets\Script\TheSunController.cs" Line="23" Column="3" />
+      <File FileName="Assets\Script\ArrowGenerater.cs" Line="22" Column="59" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
